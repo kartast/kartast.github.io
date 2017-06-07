@@ -1,1 +1,4 @@
+name: Karta's Blog
+markdown: kramdown
+  
 theme: jekyll-theme-minimal

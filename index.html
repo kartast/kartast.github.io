@@ -12,12 +12,19 @@
       const redirectUrl = urlParams.get("redirect");
       console.log(redirectUrl);
 
+      // Print the URL parameters in the body
+      const urlParamsList = document.createElement("ul");
+      for (const [key, value] of urlParams) {
+        const listItem = document.createElement("li");
+        listItem.textContent = `${key}: ${value}`;
+        urlParamsList.appendChild(listItem);
+      }
+      document.body.appendChild(urlParamsList);
+
       // Redirect to the specified URL
       if (redirectUrl) {
         window.location.href = redirectUrl;
       }
-
-      alert(urlParams);
     </script>
   </body>
 </html>

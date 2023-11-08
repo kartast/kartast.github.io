@@ -10,11 +10,14 @@
       // Get the URL parameter value
       const urlParams = new URLSearchParams(window.location.search);
       const redirectUrl = urlParams.get("redirect");
+      console.log(redirectUrl);
 
       // Redirect to the specified URL
       if (redirectUrl) {
         window.location.href = redirectUrl;
       }
+
+      alert(urlParams);
     </script>
   </body>
 </html>
